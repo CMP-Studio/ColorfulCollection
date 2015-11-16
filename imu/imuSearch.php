@@ -47,7 +47,7 @@ class imuSearch
         $search = $terms;
         $mod->findTerms($search);
       }
-      $result = $mod->fetch('start', 0, -1, $columns);
+      $result = $mod->fetch('start', 0, -1, $columns); //Fetch all
       return $result;
     }
     catch (Exception $e)
